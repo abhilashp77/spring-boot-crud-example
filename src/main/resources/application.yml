@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-boot-crud
+
+  jpa:
+    hibernate:
+      ddl-auto: create   #none - Avoid unnecessary commits to DB
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect # The SQL dialect makes Hibernate generate better SQL for the chosen database
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lessen
+    username: postgres
+    password:
